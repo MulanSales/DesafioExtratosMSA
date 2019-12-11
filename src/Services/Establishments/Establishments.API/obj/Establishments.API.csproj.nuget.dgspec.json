@@ -1,0 +1,227 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Services\\Establishments\\Establishments.API\\Establishments.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\CommonLibrary\\CommonLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\CommonLibrary\\CommonLibrary.csproj",
+        "projectName": "CommonLibrary",
+        "projectPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\CommonLibrary\\CommonLibrary.csproj",
+        "packagesPath": "C:\\Users\\luanm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\CommonLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\Events\\Events.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\Events\\Events.csproj",
+        "projectName": "Events",
+        "projectPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\Events\\Events.csproj",
+        "packagesPath": "C:\\Users\\luanm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\Events\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Services\\Establishments\\Establishments.API\\Establishments.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Services\\Establishments\\Establishments.API\\Establishments.API.csproj",
+        "projectName": "Establishments.API",
+        "projectPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Services\\Establishments\\Establishments.API\\Establishments.API.csproj",
+        "packagesPath": "C:\\Users\\luanm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Services\\Establishments\\Establishments.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\CommonLibrary\\CommonLibrary.csproj"
+              },
+              "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\Events\\Events.csproj": {
+                "projectPath": "C:\\Users\\luanm\\Documents\\Projetos\\DesafioExtratosMSA\\src\\Libraries\\Events\\Events.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[8.5.1, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.5.11, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

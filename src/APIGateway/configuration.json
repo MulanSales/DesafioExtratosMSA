@@ -1,0 +1,104 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/api/establishments/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "localhost",
+                "Port": 3002
+              }
+            ],
+            "UpstreamPathTemplate": "/api/establishments/",
+            "UpstreamHttpMethod": [ "Get", "Post", "Options" ],
+            "SwaggerKey": "establishments"
+        },
+        {
+            "DownstreamPathTemplate": "/api/establishments/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "localhost",
+                "Port": 3002
+              }
+            ],
+            "UpstreamPathTemplate": "/api/establishments/{everything}",
+            "UpstreamHttpMethod": [ "Put", "Delete" ],
+            "SwaggerKey": "establishments"
+        },
+        {
+            "DownstreamPathTemplate": "/api/releases/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "localhost",
+                "Port": 3000
+              }
+            ],
+            "UpstreamPathTemplate": "/api/releases/",
+            "UpstreamHttpMethod": [ "Get", "Post", "Options" ],
+            "SwaggerKey": "releases"
+        },
+        {
+            "DownstreamPathTemplate": "/api/releases/{everything}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+              {
+                "Host": "localhost",
+                "Port": 3000
+              }
+            ],
+            "UpstreamPathTemplate": "/api/releases/{everything}",
+            "UpstreamHttpMethod": [ "Put", "Delete" ],
+            "SwaggerKey": "releases"
+        },
+        {
+          "DownstreamPathTemplate": "/api/statements/",
+          "DownstreamScheme": "http",
+          "DownstreamHostAndPorts": [
+            {
+              "Host": "localhost",
+              "Port": 3001
+            }
+          ],
+          "UpstreamPathTemplate": "/api/statements/",
+          "UpstreamHttpMethod": [ "Get", "Options" ],
+          "SwaggerKey": "statements"
+        }
+    ],
+    "SwaggerEndPoints": [
+        {
+          "Key": "establishments",
+          "Config": [
+            {
+              "Name": "Establishments Api",
+              "Version": "v1",
+              "Url": "http://localhost:3002/swagger/v1/swagger.json"
+            }
+          ]
+        },
+        {
+          "Key": "releases",
+          "Config": [
+            {
+              "Name": "Releases Api",
+              "Version": "v1",
+              "Url": "http://localhost:3000/swagger/v1/swagger.json"
+            }
+          ]
+        },
+        {
+          "Key": "statements",
+          "Config": [
+            {
+              "Name": "Statements Api",
+              "Version": "v1",
+              "Url": "http://localhost:3001/swagger/v1/swagger.json"
+            }
+          ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost"
+    }
+}

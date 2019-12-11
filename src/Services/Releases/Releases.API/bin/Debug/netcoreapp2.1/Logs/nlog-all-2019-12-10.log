@@ -1,0 +1,782 @@
+2019-12-10 22:08:34.2406||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:08:34.5736||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:08:35.2407|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:08:38.6040|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/   
+2019-12-10 22:08:38.8491|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 244.2488ms 404  
+2019-12-10 22:08:38.9723|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/favicon.ico   
+2019-12-10 22:08:38.9723|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.4974ms 404  
+2019-12-10 22:08:48.8737|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/index.html   
+2019-12-10 22:08:49.0621|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 188.4347ms 200 text/html 
+2019-12-10 22:08:49.1385|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/swagger-ui.css   
+2019-12-10 22:08:49.1411|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/swagger-ui-bundle.js   
+2019-12-10 22:08:49.1411|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/swagger-ui-standalone-preset.js   
+2019-12-10 22:08:49.1762|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2019-12-10 22:08:49.1762|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2019-12-10 22:08:49.1887|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2019-12-10 22:08:49.1887|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.2143ms 200 text/css 
+2019-12-10 22:08:49.1887|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.8134ms 200 application/javascript 
+2019-12-10 22:08:49.1887|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.2514ms 200 application/javascript 
+2019-12-10 22:08:49.4011|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/favicon-16x16.png   
+2019-12-10 22:08:49.4011|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A' 
+2019-12-10 22:08:49.4011|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.7993ms 200 image/png 
+2019-12-10 22:08:49.4781|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/v1/swagger.json   
+2019-12-10 22:08:49.6628|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 184.7068ms 200 application/json;charset=utf-8 
+2019-12-10 22:08:55.4623|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/api/releases   
+2019-12-10 22:08:55.4976|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Releases.API.Models.Release]]] Get() on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:08:55.7265|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Get (Releases.API) - Validation state: Valid 
+2019-12-10 22:08:55.7265||INFO|Releases.API.Controllers.ReleasesController|Trying to get releases from database 
+2019-12-10 22:08:58.2077||INFO|Releases.API.Controllers.ReleasesController|Action GET for /api/releases returns 200 
+2019-12-10 22:08:58.2077|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Get (Releases.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2483.7227ms. 
+2019-12-10 22:08:58.2265|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Releases.API.Models.Release, Releases.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-12-10 22:08:58.2448|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Get (Releases.API) in 2744.1372ms 
+2019-12-10 22:08:58.2448|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2783.4546ms 200 application/json; charset=utf-8 
+2019-12-10 22:09:19.0820|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:09:19.1280|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:09:19.2320|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Post (Releases.API) - Validation state: Valid 
+2019-12-10 22:09:19.2320||INFO|Releases.API.Controllers.ReleasesController|Trying to get associated establishment 
+2019-12-10 22:09:19.4946||INFO|Releases.API.Controllers.ReleasesController|Inserting release into database 
+2019-12-10 22:09:19.8907||INFO|Releases.API.Controllers.ReleasesController|Action POST for /api/releases returns 201 
+2019-12-10 22:09:19.8907|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Post (Releases.API), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 662.1634ms. 
+2019-12-10 22:09:19.8907|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Releases.API.Models.Release'. 
+2019-12-10 22:09:19.8907|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 773.46ms 
+2019-12-10 22:09:19.8907|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 821.4267ms 201 application/json; charset=utf-8 
+2019-12-10 22:10:07.9921||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:10:10.6478||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:10:20.5280|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:10:24.9255|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/index.html   
+2019-12-10 22:10:25.5462|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 620.8067ms 200 text/html 
+2019-12-10 22:10:25.5892|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/swagger-ui.css   
+2019-12-10 22:10:25.5892|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/swagger-ui-bundle.js   
+2019-12-10 22:10:25.5892|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/swagger-ui-standalone-preset.js   
+2019-12-10 22:10:25.6165|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui-standalone-preset.js was not modified 
+2019-12-10 22:10:25.6165|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui.css was not modified 
+2019-12-10 22:10:25.6165|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui-bundle.js was not modified 
+2019-12-10 22:10:25.6165|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.5731ms 304 application/javascript 
+2019-12-10 22:10:25.6165|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.6851ms 304 application/javascript 
+2019-12-10 22:10:25.6165|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.6851ms 304 text/css 
+2019-12-10 22:10:26.1463|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/swagger/v1/swagger.json   
+2019-12-10 22:10:26.4628|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 316.5363ms 200 application/json;charset=utf-8 
+2019-12-10 22:10:30.6114|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/api/releases   
+2019-12-10 22:10:30.7642|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Releases.API.Models.Release]]] Get() on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:10:31.0006|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Get (Releases.API) - Validation state: Valid 
+2019-12-10 22:10:31.0006||INFO|Releases.API.Controllers.ReleasesController|Trying to get releases from database 
+2019-12-10 22:10:33.6340||INFO|Releases.API.Controllers.ReleasesController|Action GET for /api/releases returns 200 
+2019-12-10 22:10:33.6436|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Get (Releases.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2639.1174ms. 
+2019-12-10 22:10:33.6436|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Releases.API.Models.Release, Releases.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-12-10 22:10:33.6756|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Get (Releases.API) in 2904.5012ms 
+2019-12-10 22:10:33.6756|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3067.8225ms 200 application/json; charset=utf-8 
+2019-12-10 22:10:54.6975|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:10:54.7214|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:10:54.7831|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Post (Releases.API) - Validation state: Valid 
+2019-12-10 22:10:54.7831||INFO|Releases.API.Controllers.ReleasesController|Trying to get associated establishment 
+2019-12-10 22:10:55.0557||INFO|Releases.API.Controllers.ReleasesController|Inserting release into database 
+2019-12-10 22:10:55.5187||INFO|Releases.API.Controllers.ReleasesController|Action POST for /api/releases returns 201 
+2019-12-10 22:10:55.5187|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Post (Releases.API), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 739.417ms. 
+2019-12-10 22:10:55.5187|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Releases.API.Models.Release'. 
+2019-12-10 22:10:55.5187|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 803.4375ms 
+2019-12-10 22:10:55.5368|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 839.3712ms 201 application/json; charset=utf-8 
+2019-12-10 22:12:39.0777||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:12:40.0844||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:13:43.3479|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:13:48.2864|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:13:48.5037|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:18:37.6857||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:18:38.8290||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:19:28.4977||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:19:29.5245||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:19:34.1842|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:19:40.7983|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:19:41.0235|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:19:48.0825|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Post (Releases.API) - Validation state: Valid 
+2019-12-10 22:19:48.0940||INFO|Releases.API.Controllers.ReleasesController|Trying to get associated establishment 
+2019-12-10 22:19:50.7996||INFO|Releases.API.Controllers.ReleasesController|Inserting release into database 
+2019-12-10 22:19:51.2083||INFO|Releases.API.Controllers.ReleasesController|Action POST for /api/releases returns 201 
+2019-12-10 22:19:51.2083|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Post (Releases.API), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 3121.9563ms. 
+2019-12-10 22:19:51.2297|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Releases.API.Models.Release'. 
+2019-12-10 22:19:51.2942|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 10268.0347ms 
+2019-12-10 22:19:51.3064|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10510.2289ms 201 application/json; charset=utf-8 
+2019-12-10 22:22:31.5626||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:22:32.5671||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:22:41.2430|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:22:46.0117|20|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLRTR2G9UVTE" request processing ended abnormally. System.IO.IOException: The decryption operation failed, see inner exception. ---> System.ComponentModel.Win32Exception: Erro desconhecido ao processar o certificado
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStreamInternal.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.AdaptedPipeline.ReadInputAsync(Stream stream)
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+2019-12-10 22:22:48.5468|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:22:48.7592|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:22:52.7977|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:22:52.9440|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 4181.6954ms 
+2019-12-10 22:22:52.9440|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4403.5902ms 400 application/json; charset=utf-8 
+2019-12-10 22:23:04.1729|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 117 
+2019-12-10 22:23:04.1729|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:23:17.4598|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:23:17.4598|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 13282.1336ms 
+2019-12-10 22:23:17.4777|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13304.8039ms 400 application/json; charset=utf-8 
+2019-12-10 22:23:31.1147|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 117 
+2019-12-10 22:23:31.1147|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:23:31.1147|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:23:31.1147|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 2.223ms 
+2019-12-10 22:23:31.1147|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.4448ms 400 application/json; charset=utf-8 
+2019-12-10 22:24:05.9945||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:24:06.8495||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:24:11.4507|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:24:15.0232|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:24:15.2238|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:24:15.7326|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:24:15.8264|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 591.4696ms 
+2019-12-10 22:24:15.8331|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 810.4374ms 400 application/json; charset=utf-8 
+2019-12-10 22:24:21.8946|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 117 
+2019-12-10 22:24:21.8946|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:24:21.9237|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:24:21.9237|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 28.0911ms 
+2019-12-10 22:24:21.9237|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.6573ms 400 application/json; charset=utf-8 
+2019-12-10 22:24:28.8841|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 117 
+2019-12-10 22:24:28.8841|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:24:28.8841|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:24:28.8841|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 1.6802ms 
+2019-12-10 22:24:28.8841|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.1669ms 400 application/json; charset=utf-8 
+2019-12-10 22:24:29.5815|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 117 
+2019-12-10 22:24:29.5815|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:24:29.5815|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:24:29.5815|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 1.4366ms 
+2019-12-10 22:24:29.5815|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.0681ms 400 application/json; charset=utf-8 
+2019-12-10 22:26:46.6078|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:26:46.6096|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:26:46.6096|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-12-10 22:26:46.6096|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 3.6137ms 
+2019-12-10 22:26:46.6096|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11.7991ms 400 application/json; charset=utf-8 
+2019-12-10 22:26:54.1627||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:26:55.0170||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:27:04.2545|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) (connectionString must not be null
+Parameter name: connectionString) ---> System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.ArgumentNullException: connectionString must not be null
+Parameter name: connectionString
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name, String message)
+   at EasyNetQ.Preconditions.CheckNotNull[T](T value, String name)
+   at EasyNetQ.RabbitHutch.CreateBus(String connectionString, Action`1 registerServices)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 29
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:27:08.0444|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:27:08.2969|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:27:08.9737|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Post (Releases.API) - Validation state: Valid 
+2019-12-10 22:27:08.9737||INFO|Releases.API.Controllers.ReleasesController|Trying to get associated establishment 
+2019-12-10 22:27:12.0133||INFO|Releases.API.Controllers.ReleasesController|Inserting release into database 
+2019-12-10 22:27:12.4013||INFO|Releases.API.Controllers.ReleasesController|Action POST for /api/releases returns 201 
+2019-12-10 22:27:12.4119|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Post (Releases.API), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 3434.6748ms. 
+2019-12-10 22:27:12.4266|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Releases.API.Models.Release'. 
+2019-12-10 22:27:12.4850|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 4185.0526ms 
+2019-12-10 22:27:12.4850|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4453.4507ms 201 application/json; charset=utf-8 
+2019-12-10 22:27:36.8151|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3006/api/releases   
+2019-12-10 22:27:36.8151|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Releases.API.Models.Release]]] Get() on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:27:36.8151|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Get (Releases.API) - Validation state: Valid 
+2019-12-10 22:27:36.8333||INFO|Releases.API.Controllers.ReleasesController|Trying to get releases from database 
+2019-12-10 22:27:37.0588||INFO|Releases.API.Controllers.ReleasesController|Action GET for /api/releases returns 200 
+2019-12-10 22:27:37.0626|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Get (Releases.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 238.155ms. 
+2019-12-10 22:27:37.0626|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Releases.API.Models.Release, Releases.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-12-10 22:27:37.0841|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Get (Releases.API) in 260.9929ms 
+2019-12-10 22:27:37.0841|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 270.5484ms 200 application/json; charset=utf-8 
+2019-12-10 22:29:51.4920|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:3006/api/releases application/json-patch+json 119 
+2019-12-10 22:29:51.4920|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Post", controller = "Releases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Releases.API.Models.Release]] Post(Releases.API.Models.ReleaseRequest) on controller Releases.API.Controllers.ReleasesController (Releases.API). 
+2019-12-10 22:29:51.5061|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Releases.API.Controllers.ReleasesController.Post (Releases.API) - Validation state: Valid 
+2019-12-10 22:29:51.5061||INFO|Releases.API.Controllers.ReleasesController|Trying to get associated establishment 
+2019-12-10 22:29:51.7013||INFO|Releases.API.Controllers.ReleasesController|Inserting release into database 
+2019-12-10 22:29:51.9360||INFO|Releases.API.Controllers.ReleasesController|Action POST for /api/releases returns 201 
+2019-12-10 22:29:51.9391|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Releases.API.Controllers.ReleasesController.Post (Releases.API), returned result Microsoft.AspNetCore.Mvc.CreatedResult in 431.4019ms. 
+2019-12-10 22:29:51.9391|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Releases.API.Models.Release'. 
+2019-12-10 22:29:51.9391|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Releases.API.Controllers.ReleasesController.Post (Releases.API) in 442.5629ms 
+2019-12-10 22:29:51.9391|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 451.4244ms 201 application/json; charset=utf-8 
+2019-12-10 22:30:48.2081||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:30:48.4897||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:30:49.1482||FATAL|Microsoft.AspNetCore.Server.Kestrel|Unable to start Kestrel. System.IO.IOException: Failed to bind to address https://127.0.0.1:3007: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta) ---> System.Net.Sockets.SocketException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass22_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2019-12-10 22:30:49.2287||ERROR|Releases.API.Program|Stopped program because of exception System.IO.IOException: Failed to bind to address https://127.0.0.1:3007: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta) ---> System.Net.Sockets.SocketException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass22_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String shutdownMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Releases.API.Program.Main(String[] args) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\Program.cs:line 17
+2019-12-10 22:31:06.2137||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:31:07.0304||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:32:22.7099||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:32:23.8017||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:34:08.7673||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:34:10.3732||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:35:21.8756||DEBUG|Releases.API.Program|init main 
+2019-12-10 22:35:22.8626||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 22:35:39.6083||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:35:41.8452||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:35:41.8847||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:35:46.8982||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:35:48.9120||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:35:48.9120||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:35:53.3092||ERROR|EasyNetQ.Producer.PersistentChannel|Channel action timed out 
+2019-12-10 22:35:53.3602||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:35:53.9233||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:35:55.3697||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:35:55.3761||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:35:55.9380||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:35:55.9380||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:00.3928||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:00.9576||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:02.4005||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:02.4065||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:02.9649||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:02.9649||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:06.7648||ERROR|EasyNetQ.Producer.PersistentChannel|Channel action timed out 
+2019-12-10 22:36:06.8149||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:07.4249||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:07.9907||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:08.8239||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:08.8302||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:09.4382||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:09.4382||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:10.0053||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:10.0053||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:13.8444||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:14.4564||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:15.0302||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 
+2019-12-10 22:36:15.8508||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:15.8508||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:16.4628||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:16.4628||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:17.0426||ERROR|EasyNetQ.PersistentConnection|Failed to connect to broker "127.0.0.1", port 5672, vhost "/" RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable ---> System.AggregateException: One or more errors occurred. (Connection failed) ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:5672
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.<>c.<ConnectAsync>b__272_0(IAsyncResult iar)
+--- End of stack trace from previous location where exception was thrown ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, Int32 millisecondsTimeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, Int32 timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, Int32 connectionTimeout, Int32 readTimeout, Int32 writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at EasyNetQ.ConnectionFactoryWrapper.CreateConnection()
+   at EasyNetQ.PersistentConnection.TryToConnect()
+2019-12-10 22:36:17.0482||ERROR|EasyNetQ.PersistentConnection|Failed to connect to any Broker. Retrying in 00:00:05 
+2019-12-10 22:36:20.2270||ERROR|EasyNetQ.Producer.PersistentChannel|Channel action timed out 
+2019-12-10 22:36:20.2579|9|FATAL|Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor|An error occurred starting the application System.AggregateException: One or more errors occurred. (The operation requested on PersistentChannel timed out) (The operation requested on PersistentChannel timed out) (The operation requested on PersistentChannel timed out) ---> System.TimeoutException: The operation requested on PersistentChannel timed out
+   at EasyNetQ.Producer.PersistentChannel.InvokeChannelAction(Action`1 channelAction)
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.<>c__DisplayClass6_0`1.<InvokeAsync>b__0()
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.Invoke[T](Func`2 channelAction)
+   at EasyNetQ.RabbitAdvancedBus.QueueDeclare(String name, Boolean passive, Boolean durable, Boolean exclusive, Boolean autoDelete, Nullable`1 perQueueMessageTtl, Nullable`1 expires, Nullable`1 maxPriority, String deadLetterExchange, String deadLetterRoutingKey, Nullable`1 maxLength, Nullable`1 maxLengthBytes)
+   at EasyNetQ.RabbitBus.SubscribeAsync[T](String subscriptionId, Func`2 onMessage, Action`1 configure)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 30
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.StartAsync(CancellationToken token)
+---> (Inner Exception #0) System.TimeoutException: The operation requested on PersistentChannel timed out
+   at EasyNetQ.Producer.PersistentChannel.InvokeChannelAction(Action`1 channelAction)
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.<>c__DisplayClass6_0`1.<InvokeAsync>b__0()
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.Invoke[T](Func`2 channelAction)
+   at EasyNetQ.RabbitAdvancedBus.QueueDeclare(String name, Boolean passive, Boolean durable, Boolean exclusive, Boolean autoDelete, Nullable`1 perQueueMessageTtl, Nullable`1 expires, Nullable`1 maxPriority, String deadLetterExchange, String deadLetterRoutingKey, Nullable`1 maxLength, Nullable`1 maxLengthBytes)
+   at EasyNetQ.RabbitBus.SubscribeAsync[T](String subscriptionId, Func`2 onMessage, Action`1 configure)
+   at Releases.API.EventsHandlers.DeleteEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\DeleteEstablishmentEventHandler.cs:line 30
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #1) System.TimeoutException: The operation requested on PersistentChannel timed out
+   at EasyNetQ.Producer.PersistentChannel.InvokeChannelAction(Action`1 channelAction)
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.<>c__DisplayClass6_0`1.<InvokeAsync>b__0()
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.Invoke[T](Func`2 channelAction)
+   at EasyNetQ.RabbitAdvancedBus.QueueDeclare(String name, Boolean passive, Boolean durable, Boolean exclusive, Boolean autoDelete, Nullable`1 perQueueMessageTtl, Nullable`1 expires, Nullable`1 maxPriority, String deadLetterExchange, String deadLetterRoutingKey, Nullable`1 maxLength, Nullable`1 maxLengthBytes)
+   at EasyNetQ.RabbitBus.SubscribeAsync[T](String subscriptionId, Func`2 onMessage, Action`1 configure)
+   at Releases.API.EventsHandlers.NewEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\NewEstablishmentEventHandler.cs:line 30
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+---> (Inner Exception #2) System.TimeoutException: The operation requested on PersistentChannel timed out
+   at EasyNetQ.Producer.PersistentChannel.InvokeChannelAction(Action`1 channelAction)
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.<>c__DisplayClass6_0`1.<InvokeAsync>b__0()
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyNetQ.Producer.ClientCommandDispatcherSingleton.Invoke[T](Func`2 channelAction)
+   at EasyNetQ.RabbitAdvancedBus.QueueDeclare(String name, Boolean passive, Boolean durable, Boolean exclusive, Boolean autoDelete, Nullable`1 perQueueMessageTtl, Nullable`1 expires, Nullable`1 maxPriority, String deadLetterExchange, String deadLetterRoutingKey, Nullable`1 maxLength, Nullable`1 maxLengthBytes)
+   at EasyNetQ.RabbitBus.SubscribeAsync[T](String subscriptionId, Func`2 onMessage, Action`1 configure)
+   at Releases.API.EventsHandlers.UpdateEstablishmentEventHandler.ExecuteAsync(CancellationToken stoppingToken) in c:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\EventHandlers\EstablishmentsEventsHandlers\UpdateEstablishmentEventHandler.cs:line 30
+   at Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor.ExecuteAsync(Func`2 callback)<---
+
+2019-12-10 22:36:21.0097||DEBUG|EasyNetQ.PersistentConnection|Trying to connect 

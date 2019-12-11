@@ -1,0 +1,86 @@
+2019-12-10 22:08:34.1053 Info Message Template Auto Format enabled
+2019-12-10 22:08:34.1191 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:08:34.1813 Info Adding target File Target[allfile]
+2019-12-10 22:08:34.1813 Info Adding target File Target[ownFile-web]
+2019-12-10 22:08:34.1948 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:08:34.2109 Info Found 45 configuration items
+2019-12-10 22:09:49.2478 Info Logger closing down...
+2019-12-10 22:09:49.2498 Info Closing old configuration.
+2019-12-10 22:09:49.2676 Info Logger has been closed down.
+2019-12-10 22:09:49.2676 Info Shutting down logging...
+2019-12-10 22:09:49.2676 Info Logger has been shut down.
+2019-12-10 22:10:07.8050 Info Message Template Auto Format enabled
+2019-12-10 22:10:07.8155 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:10:07.9041 Info Adding target File Target[allfile]
+2019-12-10 22:10:07.9203 Info Adding target File Target[ownFile-web]
+2019-12-10 22:10:07.9276 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:10:07.9433 Info Found 45 configuration items
+2019-12-10 22:12:38.8664 Info Message Template Auto Format enabled
+2019-12-10 22:12:38.8749 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:12:38.9483 Info Adding target File Target[allfile]
+2019-12-10 22:12:38.9648 Info Adding target File Target[ownFile-web]
+2019-12-10 22:12:38.9794 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:12:38.9977 Info Found 45 configuration items
+2019-12-10 22:18:37.5130 Info Message Template Auto Format enabled
+2019-12-10 22:18:37.5239 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:18:37.6072 Info Adding target File Target[allfile]
+2019-12-10 22:18:37.6154 Info Adding target File Target[ownFile-web]
+2019-12-10 22:18:37.6154 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:18:37.6400 Info Found 45 configuration items
+2019-12-10 22:19:28.3235 Info Message Template Auto Format enabled
+2019-12-10 22:19:28.3376 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:19:28.4163 Info Adding target File Target[allfile]
+2019-12-10 22:19:28.4234 Info Adding target File Target[ownFile-web]
+2019-12-10 22:19:28.4234 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:19:28.4490 Info Found 45 configuration items
+2019-12-10 22:22:31.3858 Info Message Template Auto Format enabled
+2019-12-10 22:22:31.4015 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:22:31.4632 Info Adding target File Target[allfile]
+2019-12-10 22:22:31.4699 Info Adding target File Target[ownFile-web]
+2019-12-10 22:22:31.4699 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:22:31.4987 Info Found 45 configuration items
+2019-12-10 22:24:05.8346 Info Message Template Auto Format enabled
+2019-12-10 22:24:05.8346 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:24:05.9070 Info Adding target File Target[allfile]
+2019-12-10 22:24:05.9070 Info Adding target File Target[ownFile-web]
+2019-12-10 22:24:05.9236 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:24:05.9415 Info Found 45 configuration items
+2019-12-10 22:26:54.0184 Info Message Template Auto Format enabled
+2019-12-10 22:26:54.0184 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:26:54.0870 Info Adding target File Target[allfile]
+2019-12-10 22:26:54.0870 Info Adding target File Target[ownFile-web]
+2019-12-10 22:26:54.1014 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:26:54.1173 Info Found 45 configuration items
+2019-12-10 22:30:48.1031 Info Message Template Auto Format enabled
+2019-12-10 22:30:48.1115 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:30:48.1539 Info Adding target File Target[allfile]
+2019-12-10 22:30:48.1565 Info Adding target File Target[ownFile-web]
+2019-12-10 22:30:48.1565 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:30:48.1787 Info Found 45 configuration items
+2019-12-10 22:30:56.2945 Info Logger closing down...
+2019-12-10 22:30:56.2970 Info Closing old configuration.
+2019-12-10 22:30:56.2970 Info Logger has been closed down.
+2019-12-10 22:31:06.0535 Info Message Template Auto Format enabled
+2019-12-10 22:31:06.0628 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:31:06.1331 Info Adding target File Target[allfile]
+2019-12-10 22:31:06.1408 Info Adding target File Target[ownFile-web]
+2019-12-10 22:31:06.1408 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:31:06.1665 Info Found 45 configuration items
+2019-12-10 22:32:22.5122 Info Message Template Auto Format enabled
+2019-12-10 22:32:22.5205 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:32:22.5976 Info Adding target File Target[allfile]
+2019-12-10 22:32:22.5976 Info Adding target File Target[ownFile-web]
+2019-12-10 22:32:22.6221 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:32:22.6518 Info Found 45 configuration items
+2019-12-10 22:34:08.5660 Info Message Template Auto Format enabled
+2019-12-10 22:34:08.5787 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:34:08.6496 Info Adding target File Target[allfile]
+2019-12-10 22:34:08.6578 Info Adding target File Target[ownFile-web]
+2019-12-10 22:34:08.6578 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:34:08.6882 Info Found 45 configuration items
+2019-12-10 22:35:21.6105 Info Message Template Auto Format enabled
+2019-12-10 22:35:21.6105 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 22:35:21.7101 Info Adding target File Target[allfile]
+2019-12-10 22:35:21.7101 Info Adding target File Target[ownFile-web]
+2019-12-10 22:35:21.7295 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Releases\Releases.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 22:35:21.7528 Info Found 45 configuration items

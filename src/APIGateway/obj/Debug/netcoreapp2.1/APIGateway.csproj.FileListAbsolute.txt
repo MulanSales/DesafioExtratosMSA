@@ -1,0 +1,14 @@
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\bin\Debug\netcoreapp2.1\APIGateway.deps.json
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\bin\Debug\netcoreapp2.1\APIGateway.runtimeconfig.json
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\bin\Debug\netcoreapp2.1\APIGateway.runtimeconfig.dev.json
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\bin\Debug\netcoreapp2.1\APIGateway.dll
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\bin\Debug\netcoreapp2.1\APIGateway.pdb
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.csprojAssemblyReference.cache
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.csproj.CoreCompileInputs.cache
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.RazorAssemblyInfo.cache
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.RazorAssemblyInfo.cs
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.AssemblyInfoInputs.cache
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.AssemblyInfo.cs
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.RazorTargetAssemblyInfo.cache
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.dll
+C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\APIGateway\obj\Debug\netcoreapp2.1\APIGateway.pdb

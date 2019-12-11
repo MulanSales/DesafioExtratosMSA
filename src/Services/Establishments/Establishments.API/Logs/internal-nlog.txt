@@ -1,0 +1,11 @@
+2019-12-10 21:54:12.2297 Info Message Template Auto Format enabled
+2019-12-10 21:54:12.2637 Info Loading assembly: NLog.Web.AspNetCore
+2019-12-10 21:54:12.3183 Info Adding target File Target[allfile]
+2019-12-10 21:54:12.3183 Info Adding target File Target[ownFile-web]
+2019-12-10 21:54:12.3282 Info Configured from an XML element in C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Services\Establishments\Establishments.API\bin\Debug\netcoreapp2.1\nlog.config...
+2019-12-10 21:54:12.3455 Info Found 45 configuration items
+2019-12-10 21:55:46.5195 Info Logger closing down...
+2019-12-10 21:55:46.5195 Info Closing old configuration.
+2019-12-10 21:55:46.5399 Info Logger has been closed down.
+2019-12-10 21:55:46.5399 Info Shutting down logging...
+2019-12-10 21:55:46.5399 Info Logger has been shut down.

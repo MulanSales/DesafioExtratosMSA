@@ -1,0 +1,65 @@
+version: "3.1"
+services:
+    establishments-service:
+        image: "establishments-service"
+        build:
+            context: .
+            dockerfile: EstablishmentsService.Dockerfile
+        expose:
+            - "3002"
+        depends_on:
+            - rabbitmq
+        ports:
+            - "3002:3002"
+        environment:
+            ASPNETCORE_URLS: http://+:3002
+            RABBITCONNECTION: host=rabbitmq;timeout=90
+    releases-service:
+        image: "releases-service"
+        build:
+            context: .
+            dockerfile: ReleasesService.Dockerfile
+        expose:
+            - "3000"
+        depends_on:
+            - establishments-service
+            - rabbitmq
+        ports:
+            - "3000:3000"
+        environment:
+            ASPNETCORE_URLS: http://+:3000
+            RABBITCONNECTION: host=rabbitmq;timeout=90
+    statements-service:
+        image: "statements-service"
+        build:
+            context: .
+            dockerfile: StatementsService.Dockerfile
+        expose:
+            - "3001"
+        depends_on:
+            - establishments-service
+            - releases-service
+            - rabbitmq
+        ports:
+            - "3001:3001"
+        environment:
+            ASPNETCORE_URLS: http://+:3001
+            RABBITCONNECTION: host=rabbitmq;timeout=90
+    api-gateway:
+        image: "api-gateway"
+        network_mode: "host"
+        build:
+            context: .
+            dockerfile: APIGateway.Dockerfile
+        expose:
+            - "80"
+        depends_on:
+            - establishments-service
+            - releases-service
+            - statements-service
+    rabbitmq:
+        image: rabbitmq
+        expose:
+            - "5672"
+        ports:
+            - "8080:15672"

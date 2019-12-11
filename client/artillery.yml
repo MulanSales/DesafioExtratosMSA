@@ -1,0 +1,9 @@
+config:
+  target: 'https://extratos-api.herokuapp.com'
+  phases:
+    - duration: 10
+      arrivalRate: 30
+scenarios:
+  - flow:
+    - get:
+        url: "/api/statements"

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Releases.API</name>
+    </assembly>
+    <members>
+        <member name="M:Releases.API.Controllers.ReleasesController.Get">
+            <summary>
+            Returns an array of releases
+            </summary>
+            <returns>An array of all releases inserted in the past</returns>
+            <response code="200">Returns the array</response>
+            <response code="404">If can't find any release</response>    
+            <response code="500">If an error in server side happens</response> 
+        </member>
+        <member name="M:Releases.API.Controllers.ReleasesController.Post(Releases.API.Models.ReleaseRequest)">
+             <summary>
+             Creates a new release
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST api/releases
+                 {
+                    "date": "05/05/2019",
+                    "paymentMethod": "Credito",
+                    "establishmentName": "Padaria Stn",
+                    "amount": 34.88
+                 }
+            
+             </remarks>
+             <returns>The newly release created</returns>
+             <response code="201">Returns the newly created release</response>
+             <response code="400">If the request is not in correct format</response>    
+             <response code="404">If the resource is not in the database</response>    
+             <response code="500">If an error in server side happens</response>    
+        </member>
+        <member name="M:Releases.API.Controllers.ReleasesController.Put(System.String,Releases.API.Models.ReleaseRequest)">
+             <summary>
+             Updates an old release
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT api/releases/5dcaad2526235a471cfcccaf
+                 {
+                    "date": "06/05/2019",
+                    "paymentMethod": "Credito",
+                    "establishmentName": "Padaria Stn",
+                    "amount": 56.88
+                 }
+            
+             </remarks>
+             <returns>The updated release</returns>
+             <response code="200">Returns the updated release</response>
+             <response code="400">If the request is not in correct format</response>    
+             <response code="404">If the resource is not in the database</response>    
+             <response code="406">If the resource is not acceptable</response>    
+             <response code="500">If an error in server side happens</response>    
+        </member>
+        <member name="M:Releases.API.Controllers.ReleasesController.Delete(System.String)">
+             <summary>
+             Deletes a release
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE api/releases/5dcaad2526235a471cfcccaf
+            
+             </remarks>
+             <returns>The response message with success</returns>
+             <response code="200">Returns sucess response message</response>
+             <response code="400">If the request is not in correct format</response>    
+             <response code="404">If the resource is not in the database</response>    
+             <response code="406">If the resource is not acceptable</response>    
+             <response code="500">If an error in server side happens</response>    
+        </member>
+    </members>
+</doc>

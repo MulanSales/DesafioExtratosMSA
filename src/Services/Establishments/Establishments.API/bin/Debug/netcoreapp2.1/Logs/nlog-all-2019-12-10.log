@@ -1,0 +1,24 @@
+2019-12-10 21:54:12.4317||DEBUG|Establishments.API.Program|init main 
+2019-12-10 21:54:12.7324||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\luanm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2019-12-10 21:54:17.4695|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3004/swagger/index.html   
+2019-12-10 21:54:17.7924|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 323.3698ms 200 text/html 
+2019-12-10 21:54:17.8937|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3004/swagger/swagger-ui-bundle.js   
+2019-12-10 21:54:17.8937|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3004/swagger/swagger-ui-standalone-preset.js   
+2019-12-10 21:54:17.8937|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3004/swagger/swagger-ui.css   
+2019-12-10 21:54:17.9203|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui-standalone-preset.js was not modified 
+2019-12-10 21:54:17.9203|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui-bundle.js was not modified 
+2019-12-10 21:54:17.9203|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /swagger-ui.css was not modified 
+2019-12-10 21:54:17.9241|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.1371ms 304 text/css 
+2019-12-10 21:54:17.9241|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.4003ms 304 application/javascript 
+2019-12-10 21:54:17.9241|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.3619ms 304 application/javascript 
+2019-12-10 21:54:19.0885|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3004/swagger/v1/swagger.json   
+2019-12-10 21:54:19.2724|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 183.9948ms 200 application/json;charset=utf-8 
+2019-12-10 21:54:24.3084|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:3004/api/establishments   
+2019-12-10 21:54:24.3461|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "Get", controller = "Establishments"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Establishments.API.Models.Establishment]]] Get() on controller Establishments.API.Controllers.EstablishmentsController (Establishments.API). 
+2019-12-10 21:54:24.8963|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Establishments.API.Controllers.EstablishmentsController.Get (Establishments.API) - Validation state: Valid 
+2019-12-10 21:54:24.8963||INFO|Establishments.API.Controllers.EstablishmentsController|Trying to get establishments from database 
+2019-12-10 21:54:29.5271||INFO|Establishments.API.Controllers.EstablishmentsController|Action GET for /api/establishments returns 200 
+2019-12-10 21:54:29.5324|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method Establishments.API.Controllers.EstablishmentsController.Get (Establishments.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4633.0617ms. 
+2019-12-10 21:54:29.5324|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Establishments.API.Models.Establishment, Establishments.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-12-10 21:54:29.5633|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Establishments.API.Controllers.EstablishmentsController.Get (Establishments.API) in 5214.5858ms 
+2019-12-10 21:54:29.5633|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5257.8605ms 200 application/json; charset=utf-8 
