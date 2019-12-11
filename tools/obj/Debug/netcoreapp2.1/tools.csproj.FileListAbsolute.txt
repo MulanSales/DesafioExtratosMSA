@@ -1,9 +1,0 @@
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\bin\Debug\netcoreapp2.1\tools.deps.json
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\bin\Debug\netcoreapp2.1\tools.dll
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\bin\Debug\netcoreapp2.1\tools.pdb
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\obj\Debug\netcoreapp2.1\tools.csprojAssemblyReference.cache
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\obj\Debug\netcoreapp2.1\tools.csproj.CoreCompileInputs.cache
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\obj\Debug\netcoreapp2.1\tools.AssemblyInfoInputs.cache
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\obj\Debug\netcoreapp2.1\tools.AssemblyInfo.cs
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\obj\Debug\netcoreapp2.1\tools.dll
-C:\Users\luanm\Documents\Projetos\DesafioExtratos\tools\obj\Debug\netcoreapp2.1\tools.pdb

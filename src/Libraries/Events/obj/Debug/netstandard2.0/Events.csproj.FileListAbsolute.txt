@@ -1,9 +1,0 @@
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\bin\Debug\netstandard2.0\Events.deps.json
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\bin\Debug\netstandard2.0\Events.dll
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\bin\Debug\netstandard2.0\Events.pdb
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\obj\Debug\netstandard2.0\Events.csprojAssemblyReference.cache
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\obj\Debug\netstandard2.0\Events.csproj.CoreCompileInputs.cache
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\obj\Debug\netstandard2.0\Events.AssemblyInfoInputs.cache
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\obj\Debug\netstandard2.0\Events.AssemblyInfo.cs
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\obj\Debug\netstandard2.0\Events.dll
-C:\Users\luanm\Documents\Projetos\DesafioExtratosMSA\src\Libraries\Events\obj\Debug\netstandard2.0\Events.pdb

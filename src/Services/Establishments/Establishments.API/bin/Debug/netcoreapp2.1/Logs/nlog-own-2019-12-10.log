@@ -1,3 +1,0 @@
-2019-12-10 21:54:12.4317||DEBUG|Establishments.API.Program|init main |url: |action: 
-2019-12-10 21:54:24.8963||INFO|Establishments.API.Controllers.EstablishmentsController|Trying to get establishments from database |url: http://localhost/api/establishments|action: Get
-2019-12-10 21:54:29.5271||INFO|Establishments.API.Controllers.EstablishmentsController|Action GET for /api/establishments returns 200 |url: http://localhost/api/establishments|action: Get
