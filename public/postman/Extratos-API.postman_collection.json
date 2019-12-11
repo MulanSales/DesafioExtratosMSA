@@ -1,0 +1,824 @@
+{
+	"info": {
+		"_postman_id": "750ebfec-2819-45d2-a716-136a00457a72",
+		"name": "Extratos-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lançamentos",
+			"item": [
+				{
+					"name": "Retrieve Releases",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/releases",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"releases"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve Releases - 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/releases",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"releases"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:48:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5dcee49a64fb4b000599d0e9\",\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Credito\",\n        \"establishmentName\": \"Padaria Stn\",\n        \"amount\": 19.95,\n        \"createdAt\": \"2019-11-15T17:47:06.906Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee4b164fb4b000599d0ea\",\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Credito\",\n        \"establishmentName\": \"T-Shirt Stn\",\n        \"amount\": 149.99,\n        \"createdAt\": \"2019-11-15T17:47:29.854Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee4c764fb4b000599d0eb\",\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Debito\",\n        \"establishmentName\": \"CineStn\",\n        \"amount\": 24.5,\n        \"createdAt\": \"2019-11-15T17:47:51.623Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee4dd64fb4b000599d0ec\",\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Debito\",\n        \"establishmentName\": \"EletroStn\",\n        \"amount\": 349,\n        \"createdAt\": \"2019-11-15T17:48:13.001Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee4fc64fb4b000599d0ed\",\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Credito\",\n        \"establishmentName\": \"RosquinhaStn\",\n        \"amount\": 24,\n        \"createdAt\": \"2019-11-15T17:48:44.735Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Release",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"02/11/2019\",\r\n  \"paymentMethod\": \"Credito\",\r\n  \"establishmentName\": \"RosquinhaStn\",\r\n  \"amount\": 24.00\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/releases",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"releases"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Release - 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"02/11/2019\",\r\n  \"paymentMethod\": \"Credito\",\r\n  \"establishmentName\": \"RosquinhaStn\",\r\n  \"amount\": 24.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/releases",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"releases"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:48:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Location",
+									"value": ""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5dcee4fc64fb4b000599d0ed\",\n    \"date\": \"02/11/2019\",\n    \"paymentMethod\": \"Credito\",\n    \"establishmentName\": \"RosquinhaStn\",\n    \"amount\": 24,\n    \"createdAt\": \"2019-11-15T17:48:44.7357172+00:00\",\n    \"updatedAt\": \"0001-01-01T00:00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Release",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"date\": \"02/11/2019\",\r\n  \"paymentMethod\": \"Debito\",\r\n  \"establishmentName\": \"RosquinhaStn\",\r\n  \"amount\": 24.00\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/releases/5dcee4fc64fb4b000599d0ed",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"releases",
+								"5dcee4fc64fb4b000599d0ed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Release - 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"date\": \"02/11/2019\",\r\n  \"paymentMethod\": \"Debito\",\r\n  \"establishmentName\": \"RosquinhaStn\",\r\n  \"amount\": 24.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/releases/5dcee4fc64fb4b000599d0ed",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"releases",
+										"5dcee4fc64fb4b000599d0ed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:49:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5dcee4fc64fb4b000599d0ed\",\n    \"date\": \"02/11/2019\",\n    \"paymentMethod\": \"Debito\",\n    \"establishmentName\": \"RosquinhaStn\",\n    \"amount\": 24,\n    \"createdAt\": \"2019-11-15T17:48:44.735Z\",\n    \"updatedAt\": \"2019-11-15T17:49:58.385252+00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Release",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/releases/5dcee4fc64fb4b000599d0ed",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"releases",
+								"5dcee4fc64fb4b000599d0ed"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Release - 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/releases/5dcee4fc64fb4b000599d0ed",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"releases",
+										"5dcee4fc64fb4b000599d0ed"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:50:35 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"lançamento deletado com sucesso\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Estabelecimentos",
+			"item": [
+				{
+					"name": "Retrieve Establishments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/establishments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"establishments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve Establishments - 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/establishments",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"establishments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:33:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"5dcee12764fb4b000599d0e2\",\n        \"name\": \"Padaria Stn\",\n        \"type\": \"Alimentação\",\n        \"createdAt\": \"2019-11-15T17:32:23.403Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee13864fb4b000599d0e3\",\n        \"name\": \"T-Shirt Stn\",\n        \"type\": \"Vestuário\",\n        \"createdAt\": \"2019-11-15T17:32:40.576Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee14264fb4b000599d0e4\",\n        \"name\": \"CineStn\",\n        \"type\": \"Lazer\",\n        \"createdAt\": \"2019-11-15T17:32:50.834Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee14e64fb4b000599d0e5\",\n        \"name\": \"EletroStn\",\n        \"type\": \"Contas\",\n        \"createdAt\": \"2019-11-15T17:33:02.335Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    {\n        \"id\": \"5dcee15d64fb4b000599d0e6\",\n        \"name\": \"RosquinhaStn\",\n        \"type\": \"Alimentação\",\n        \"createdAt\": \"2019-11-15T17:33:17.578Z\",\n        \"updatedAt\": \"0001-01-01T00:00:00Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Establishment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"RosquinhaStn\",\r\n   \"type\": \"Alimentação\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/establishments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"establishments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Establishment - 201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\": \"RosquinhaStn\",\r\n   \"type\": \"Alimentação\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/establishments",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"establishments"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:33:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Location",
+									"value": ""
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5dcee15d64fb4b000599d0e6\",\n    \"name\": \"RosquinhaStn\",\n    \"type\": \"Alimentação\",\n    \"createdAt\": \"2019-11-15T17:33:17.5784197+00:00\",\n    \"updatedAt\": \"0001-01-01T00:00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Establishment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"RosquinhaIIStn\",\r\n   \"type\": \"Alimentação\"\r\n}"
+						},
+						"url": {
+							"raw": "{{url}}/api/establishments/5dcee26564fb4b000599d0e7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"establishments",
+								"5dcee26564fb4b000599d0e7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Establishment - 200",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\": \"RosquinhaIIStn\",\r\n   \"type\": \"Alimentação\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/establishments/5dcee15d64fb4b000599d0e6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"establishments",
+										"5dcee15d64fb4b000599d0e6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:36:03 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"5dcee15d64fb4b000599d0e6\",\n    \"name\": \"RosquinhaIIStn\",\n    \"type\": \"Alimentação\",\n    \"createdAt\": \"2019-11-15T17:33:17.578Z\",\n    \"updatedAt\": \"2019-11-15T17:36:04.0628086+00:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Establishment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/api/establishments/5dcee26564fb4b000599d0e7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"establishments",
+								"5dcee26564fb4b000599d0e7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Establishment - 200",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/establishments/5dcee26564fb4b000599d0e7",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"establishments",
+										"5dcee26564fb4b000599d0e7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:37:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 200,\n    \"message\": \"estabelecimento deletado com sucesso\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Extratos",
+			"item": [
+				{
+					"name": "Retrieve Statements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/statements",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"statements"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve Statements - 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/statements",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"statements"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 17:51:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Credito\",\n        \"type\": \"Alimentação\",\n        \"totalAmount\": 43.95\n    },\n    {\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Credito\",\n        \"type\": \"Vestuário\",\n        \"totalAmount\": 149.99\n    },\n    {\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Debito\",\n        \"type\": \"Lazer\",\n        \"totalAmount\": 24.5\n    },\n    {\n        \"date\": \"02/11/2019\",\n        \"paymentMethod\": \"Debito\",\n        \"type\": \"Contas\",\n        \"totalAmount\": 349\n    }\n]"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
