@@ -8,7 +8,7 @@ script:
   - dotnet build
   - cd tools
   - dotnet restore
-  - dotnet minicover instrument --workdir ../ --assemblies src/Services/Establishments/Establishments.Tests/**/bin/**/*.dll --assemblies src/Services/Releases/Releases.Tests/**/bin/**/ --assemblies src/Services/Statements/Statements.Tests/**/bin/**/*.dll --sources src/Services/Establishments/Establishments.API/Controllers/**/*.cs --sources src/Services/Releases/Releases.API/Controllers/**/*.cs --sources src/Services/Statements/Statements.API/Controllers/**/*.cs
+  - dotnet minicover instrument --workdir ../ --assemblies src/Services/Establishments/Establishments.Tests/**/bin/**/*.dll --assemblies src/Services/Releases/Releases.Tests/**/bin/**/*.dll --assemblies src/Services/Statements/Statements.Tests/**/bin/**/*.dll --sources src/Services/Establishments/Establishments.API/Controllers/**/*.cs --sources src/Services/Releases/Releases.API/Controllers/**/*.cs --sources src/Services/Statements/Statements.API/Controllers/**/*.cs
   - dotnet minicover reset
   - cd ..
   - dotnet test --no-build ./src/Services/Establishments/Establishments.Tests/Establishments.Tests.csproj --verbosity normal
