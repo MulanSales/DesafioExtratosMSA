@@ -27,6 +27,6 @@
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
     "artillery": "^1.6.0-29",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
